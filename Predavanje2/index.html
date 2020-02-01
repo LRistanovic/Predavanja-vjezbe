@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Predavanje 2</title>
+    </head>
+    <body>
+        <!-- <iframe src="https://www.ucg.ac.me/"></iframe> <br /> -->
+        <a href="../Predavanje1/" target="iframe_a">Predavanje 1</a> <br />
+        <a href="../Predavanje1/images/slika.jpg" target="iframe_a">Slika iz predavanaja 1</a> <br />
+        <iframe name="iframe_a"></iframe>
+
+        <form action="register.html">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username" name="username" id="username" required/>
+            <br />
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id=password disabled/>
+            <br />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <br />
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" />
+            <br />
+
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number" min="3" step="5" />
+            <br />
+
+            <input type="color" name="color" id="color" />
+            <br />
+
+            <label for="banana">banana</label>
+            <input type="checkbox" name="checkbox" id="food" value="banana" />
+            <br />
+
+            Male
+            <input type="radio" name="gender" value="male" />
+            <br />
+            Female
+            <input type="radio" name="gender" value="female" />
+            <br />
+
+            <select name="country" id="country" multiple>
+                <option value="0" selected disabled>Select country</option>
+                <option value="1">Montenegro</option>
+                <option value="2">Germany</option>
+                <option value="3">Russia</option>
+            </select>
+            <br />
+
+            <textarea name="opis" id="opis" cols="30" rows="10">neki text text
+                text text
+            </textarea>
+            <br />
+
+            <input type="file">
+            <br />
+
+            <input type="submit" />
+        </form>
+        <!-- Media elements -->
+        <audio controls loop>
+            <source src="source one" />
+            <source src="source two" />
+            Nije ucitano
+        </audio>
+        <br />
+
+        <video controls autoplay poster="../Predavanje1/images/slika.jpg">
+                <source src="source one" />
+                <source src="source two" />
+                Nije ucitano
+        </video>
+    </body>
+</html>
